@@ -43,8 +43,10 @@ namespace EDDitor
                 // Saves the Image via a FileStream created by the OpenFile method.
                 System.IO.FileStream fs =
                    (System.IO.FileStream)saveFileDialog1.OpenFile();
- 
                 fs.Close();
+                StreamWriter sw = new StreamWriter(saveFileDialog1.FileName);
+                sw.WriteLine(getCurrentFile(sender as Button).Content);
+                sw.Close();
             }
         }
     }

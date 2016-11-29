@@ -12,3 +12,17 @@ E:\Programming\C#\EDDitor\EDDitor\obj\Debug\EDDitor.Properties.Resources.resourc
 E:\Programming\C#\EDDitor\EDDitor\obj\Debug\EDDitor.csproj.GenerateResource.Cache
 E:\Programming\C#\EDDitor\EDDitor\obj\Debug\EDDitor.exe
 E:\Programming\C#\EDDitor\EDDitor\obj\Debug\EDDitor.pdb
+C:\Users\Den\Documents\Visual Studio 2015\Projects\eDditor\EDDitor\EDDitor\bin\Debug\EDDitor.exe.config
+C:\Users\Den\Documents\Visual Studio 2015\Projects\eDditor\EDDitor\EDDitor\obj\Debug\EDDitor.exe
+C:\Users\Den\Documents\Visual Studio 2015\Projects\eDditor\EDDitor\EDDitor\obj\Debug\EDDitor.pdb
+C:\Users\Den\Documents\Visual Studio 2015\Projects\eDditor\EDDitor\EDDitor\obj\Debug\EDDitor.csprojResolveAssemblyReference.cache
+C:\Users\Den\Documents\Visual Studio 2015\Projects\eDditor\EDDitor\EDDitor\obj\Debug\MainWindow.g.cs
+C:\Users\Den\Documents\Visual Studio 2015\Projects\eDditor\EDDitor\EDDitor\obj\Debug\App.g.cs
+C:\Users\Den\Documents\Visual Studio 2015\Projects\eDditor\EDDitor\EDDitor\obj\Debug\EDDitor_MarkupCompile.cache
+C:\Users\Den\Documents\Visual Studio 2015\Projects\eDditor\EDDitor\EDDitor\obj\Debug\EDDitor_MarkupCompile.lref
+C:\Users\Den\Documents\Visual Studio 2015\Projects\eDditor\EDDitor\EDDitor\bin\Debug\EDDitor.exe
+C:\Users\Den\Documents\Visual Studio 2015\Projects\eDditor\EDDitor\EDDitor\bin\Debug\EDDitor.pdb
+C:\Users\Den\Documents\Visual Studio 2015\Projects\eDditor\EDDitor\EDDitor\obj\Debug\MainWindow.baml
+C:\Users\Den\Documents\Visual Studio 2015\Projects\eDditor\EDDitor\EDDitor\obj\Debug\EDDitor.g.resources
+C:\Users\Den\Documents\Visual Studio 2015\Projects\eDditor\EDDitor\EDDitor\obj\Debug\EDDitor.Properties.Resources.resources
+C:\Users\Den\Documents\Visual Studio 2015\Projects\eDditor\EDDitor\EDDitor\obj\Debug\EDDitor.csproj.GenerateResource.Cache
