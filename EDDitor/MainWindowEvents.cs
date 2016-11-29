@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.IO;
+using Microsoft.Win32;
 
 namespace EDDitor
 {
@@ -26,11 +28,24 @@ namespace EDDitor
         }
         private void saveFile(object sender, RoutedEventArgs e)
         {
-            //here
+            //File.WriteAllText(path , tbt.Text);
         }
         private void saveFileAs(object sender, RoutedEventArgs e)
         {
-            //here
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Filter = "Text documents (.txt)|*.txt|Word doc (.DOCM)|*.DOMC";
+            saveFileDialog1.Title = "Save an Text File";
+            saveFileDialog1.ShowDialog();
+
+            if (saveFileDialog1.FileName != "")
+            {
+
+                // Saves the Image via a FileStream created by the OpenFile method.
+                System.IO.FileStream fs =
+                   (System.IO.FileStream)saveFileDialog1.OpenFile();
+ 
+                fs.Close();
+            }
         }
     }
 }

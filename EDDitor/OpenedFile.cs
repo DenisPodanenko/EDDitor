@@ -54,11 +54,11 @@ namespace EDDitor
             spControl.Children.Add(btnRemove);
 
             Button btnSave = CreateButton("s");
-            btnSave.Click += saveAsEvent;
+            btnSave.Click += saveEvent;
             spControl.Children.Add(btnSave);
 
             Button btnSaveAs = CreateButton("ax");
-            btnSave.Click += saveAsEvent;
+            btnSaveAs.Click += saveAsEvent;
             spControl.Children.Add(btnSaveAs);
 
             CheckBox readyToMerger = new CheckBox();
