@@ -26,11 +26,10 @@ namespace EDDitor
 
         private void clickBtnCreate(object sender, RoutedEventArgs e)
         {
-            OpenedFile newFile = new OpenedFile(closeFile);
+            OpenedFile newFile = new OpenedFile(closeFile, saveFile, saveFileAs);
             spMain.Children.Add(newFile.spTextSpace);
             openedFiles.Add(newFile);
         }
-
         private void clickBtnMerge(object sender, RoutedEventArgs e)
         {
             StringBuilder content = new StringBuilder();
@@ -45,25 +44,29 @@ namespace EDDitor
 
             if (content.ToString() != "")
             {
-                OpenedFile newFile = new OpenedFile(closeFile, content.ToString());
+                OpenedFile newFile = new OpenedFile(closeFile, saveFile, saveFileAs, content.ToString());
                 spMain.Children.Add(newFile.spTextSpace);
                 openedFiles.Add(newFile);
             }
         }
-
-        //events textBlock
-        private void closeFile(object sender, RoutedEventArgs e)
+        private void clickBtnOpen(object sender, RoutedEventArgs e)
         {
-            StackPanel spClosingFile = (((sender as Button).Parent as StackPanel).Parent as StackPanel); //get needed parent element
-            
-            for (int i = 0; i < openedFiles.Count; i++)
+
+        }
+
+        private OpenedFile getCurrentFile(Button btnClicked)
+        {
+            foreach (var file in openedFiles)
             {
-                if(openedFiles[i].spTextSpace == spClosingFile)
+                StackPanel spControl = file.spTextSpace.Children[0] as StackPanel;
+
+                foreach (Button button in spControl.Children)
                 {
-                    spMain.Children.Remove(openedFiles[i].spTextSpace);
-                    openedFiles.Remove(openedFiles[i]);
+                    if (button == btnClicked)
+                        return file;
                 }
             }
+            return null;
         }
     }
 }

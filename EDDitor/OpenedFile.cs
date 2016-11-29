@@ -34,7 +34,7 @@ namespace EDDitor
             }
         }
 
-        public OpenedFile(RoutedEventHandler removeEvent, string content = "")
+        public OpenedFile(RoutedEventHandler closeEvent, RoutedEventHandler saveEvent, RoutedEventHandler saveAsEvent, string content = "")
         {
             spTextSpace = new StackPanel();
             spTextSpace.Margin = new Thickness(15);
@@ -50,13 +50,15 @@ namespace EDDitor
 
             //create buttons
             Button btnRemove = CreateButton("x");
-            btnRemove.Click += removeEvent;
+            btnRemove.Click += closeEvent;
             spControl.Children.Add(btnRemove);
 
             Button btnSave = CreateButton("s");
+            btnSave.Click += saveAsEvent;
             spControl.Children.Add(btnSave);
 
             Button btnSaveAs = CreateButton("ax");
+            btnSave.Click += saveAsEvent;
             spControl.Children.Add(btnSaveAs);
 
             CheckBox readyToMerger = new CheckBox();
